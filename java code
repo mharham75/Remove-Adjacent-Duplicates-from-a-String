@@ -1,0 +1,27 @@
+import java.util.*;
+import java.lang.*;
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+		Scanner sc = new Scanner(System.in);
+		String str = sc.nextLine();
+		StringBuilder res = new StringBuilder();
+    
+    for(int i=0; i<str.length(); i++)
+    {
+      if(!st.isEmpty() && str.charAt(i)==st.peek())
+        st.pop();
+        
+      else
+        st.push(str.charAt(i));
+     }
+     //to print result in string format 
+     //otherwise result will be in [a,a,a,a] format
+     for(Character ch : st)
+      res.append(ch);
+      
+      System.out.println(res);
+    
+ }
+}
